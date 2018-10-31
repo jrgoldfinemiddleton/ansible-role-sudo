@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: sudo
   author: Jason Goldfine-Middleton
   description: Configures password-less sudo for users
   company: N/A
