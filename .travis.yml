@@ -6,16 +6,16 @@ env:
   global:
     - ROLE_NAME: sudo
 
-  install:
-    - pip install molecule docker
+install:
+  - pip install molecule docker
 
-  before_script:
-    - cd ..
-    - mv ansible-role-${ROLE_NAME} jrgoldfinemiddleton.${ROLE_NAME}
-    - cd jrgoldfinemiddleton.${ROLE_NAME}
+before_script:
+  - cd ..
+  - mv ansible-role-${ROLE_NAME} jrgoldfinemiddleton.${ROLE_NAME}
+  - cd jrgoldfinemiddleton.${ROLE_NAME}
 
-  script:
-    - molecule test
+script:
+  - molecule test
 
-  notifications:
-    webhooks: https://galaxy.ansible.com/api/v1/notifications/
+notifications:
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/
