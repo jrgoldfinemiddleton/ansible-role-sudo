@@ -5,4 +5,4 @@
     sudo_passwordless_users:
       - jason
   roles:
-    - role: sudo
+    - role: jrgoldfinemiddleton.sudo
