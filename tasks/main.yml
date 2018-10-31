@@ -1,0 +1,10 @@
+---
+- name: Update password-less sudoers
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    insertafter: '^root\s'
+    regexp: '^{{ item }}\s'
+    line: "{{ item }}\t\tALL = (ALL) NOPASSWD:ALL"
+    validate: '/usr/sbin/visudo -cf %s'
+  loop: '{{ sudo_passwordless_users }}'

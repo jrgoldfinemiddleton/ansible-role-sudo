@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  vars:
+    sudo_passwordless_users:
+      - jason
+  roles:
+    - role: sudo
