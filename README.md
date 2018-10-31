@@ -1,6 +1,8 @@
 Ansible Role: sudo
 =========
 
+[![Build Status](https://travis-ci.org/jrgoldfinemiddleton/ansible-role-sudo.svg?branch=master)](https://travis-ci.org/jrgoldfinemiddleton/ansible-role-sudo)
+
 This role simply gives a list of users passwordless sudo rights.
 
 Requirements
